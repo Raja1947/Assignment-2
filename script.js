@@ -1,6 +1,31 @@
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.querySelector('.main-nav');
+document.addEventListener("DOMContentLoaded", () => {
+  const menuIcon = document.querySelector(".top-menu");
+  const closeIcon = document.querySelector(".top-close");
+  const nav = document.querySelector(".top-nav-list");
+  const menuIcon2 = document.querySelector(".bottom-menu");
+  const closeIcon2 = document.querySelector(".bottom-close");
+  const nav2 = document.querySelector(".bottom-item");
 
-hamburger.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
+  menuIcon.addEventListener("click", () => {
+    nav.classList.add("active");
+    menuIcon.style.display = "none";
+    closeIcon.style.display = "block";
+  });
+
+  closeIcon.addEventListener("click", () => {
+    nav.classList.remove("active");
+    menuIcon.style.display = "block";
+    closeIcon.style.display = "none";
+  });
+  menuIcon2.addEventListener("click", () => {
+    nav2.classList.add("active");
+    menuIcon2.style.display = "none";
+    closeIcon2.style.display = "block";
+  });
+
+  closeIcon2.addEventListener("click", () => {
+    nav2.classList.remove("active");
+    menuIcon2.style.display = "block";
+    closeIcon2.style.display = "none";
+  });
 });
