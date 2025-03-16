@@ -1,10 +1,41 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
 }
-body{
-    background: #f5f5f5;
+:root {
+  --heading-color: #123c7b;
+  --para-color: #363636;
+  --text-white: #ffffff;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.h1 {
+  font-weight: 900;
+  font-size: 54px;
+}
+.h6 {
+  font-size: 20px;
+  font-weight: 900;
+}
+.p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2%;
 }
