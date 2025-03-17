@@ -320,6 +320,9 @@ img {
 }
 
 /* services */
+.services-container {
+  position: relative;
+}
 .service-grey::before {
   content: "";
   position: absolute;
@@ -332,31 +335,30 @@ img {
   border-bottom-right-radius: 100px;
 }
 .service-content {
-  padding: 30px 0;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
-.service-top{
+.service-top {
   display: flex;
   flex-direction: column;
-  gap: 8px;  
+  gap: 8px;
 }
-.service-top p{
+.service-top p {
   max-width: 460px;
 }
-.service-bottom{
+.service-bottom {
   width: 92%;
   margin: 0 auto;
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 80px;
-  
 }
-.bottom-content{
+.bottom-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;    
+  gap: 20px;
   transition: all 0.3s ease-in-out;
   border-radius: 10px;
   overflow: hidden;
@@ -368,36 +370,34 @@ img {
   background-color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
 }
-.bottom-content-top{
+.bottom-content-top {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.bottom-content h5{
+.bottom-content h5 {
   color: var(--heading-color);
   font-size: 20px;
-} 
-.bottom-content p{
+}
+.bottom-content p {
   color: var(--para-color);
   font-size: 16px;
-} 
-.bottom-content-bottom{
+}
+.bottom-content-bottom {
   display: flex;
   gap: 10px;
   align-items: center;
   font-weight: 500;
 }
-.bottom-content-bottom a{
+.bottom-content-bottom a {
   color: var(--heading-color);
   cursor: pointer;
   font-size: 13px;
- 
 }
-.service-btn{
+.service-btn {
   margin: 0 auto;
-
 }
-.service-btn button{
+.service-btn button {
   width: 150px;
   padding: 12px 1px;
   background-color: var(--heading-color);
@@ -406,18 +406,18 @@ img {
   border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
-} 
-.service-btn button:hover{
+}
+.service-btn button:hover {
   background-color: #ffffff;
   color: var(--heading-color);
   border: 1px solid var(--heading-color);
   transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
-  .service-bottom{
+  .service-bottom {
     grid-template-columns: 1fr 1fr;
   }
-  .service-content{
+  .service-content {
     gap: 40px;
   }
   @media screen and (max-width: 768px) {
@@ -427,33 +427,107 @@ img {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
-   
-    .service-bottom{
+
+    .service-bottom {
       gap: 25px;
     }
-    .service-content{
+    .service-content {
       gap: 20px;
     }
-    .service-top h1{
+    .service-top h1 {
       font-size: 40px;
     }
-    .service-top p{
+    .service-top p {
       font-size: 17px;
     }
-    
   }
   @media screen and (max-width: 500px) {
-    .service-bottom{
+    .service-bottom {
       grid-template-columns: 1fr;
     }
-    .service-bottom{
+    .service-bottom {
       gap: 30px;
     }
-    
-    .service-content{
+
+    .service-content {
       gap: 20px;
     }
-    
   }
-  
 }
+
+
+/* number -container  */
+.number-container{
+  position: relative;
+  /* overflow: hidden  ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  
+
+}
+
+.number-img{
+  /* background-color: lightcoral; */
+  position: absolute;
+  right: 0;
+  top: -400px;
+  left: 20px;
+
+}
+.number-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.number-content{
+  padding: 50px 0;
+  width: 68%;
+  margin: 0 auto;
+  
+  /* background-color: red; */
+}
+.container-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  gap: 40px;
+}
+.container-left{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container-left h1{
+  color: var(--heading-color);
+  font-size: 50px;
+  max-width: 400px;
+}
+.container-left p{
+  color: var(--para-color);
+  font-size: 20px;
+  max-width: 400px;
+}
+.container-right{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.container-right-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: rgba(230, 243, 231, 1);
+  background: rgba(230, 243, 231, 1);
+  padding: 30px;
+  border-radius: 21px;
+  box-shadow: 15px 18px rgba(210, 210, 210, 0.58);
+}
+.container-right-content p{
+  color: var(--heading-color);
+}
+
