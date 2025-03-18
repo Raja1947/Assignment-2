@@ -43,3 +43,9 @@ new Splide('.splide', {
       600: { perPage:  1} 
   }
 }).mount();
+
+new Splide(".splide-2", {
+  type: "loop",
+  autoplay: true,
+  pagination: false,
+}).mount();

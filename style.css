@@ -797,72 +797,194 @@ button:hover {
 
 .location-container {
   position: relative;
-  padding: 20px 0;
-  /* background-color: red; */
+  padding: 40px 0;
+  background-color: #f8f8f8;
 }
 
 .left-location-content {
-  position: absolute;
-  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 .location-top-content {
   display: flex;
   flex-direction: column;
+  justify-content: end;
   align-items: end;
-  gap: 25px;
-  /* width: 45%; */
+  gap: 35px;
 
-  height: 100%;
+  width: 50%;
+  margin-left: auto;
+  text-align: end;
 }
-.location-top-para p {
-  color: var(--para-color);
-  font-size: 22px;
-}
-.location-bottom-para p {
-  color: var(--para-color);
-  font-size: 22px;
-}
-.location-list ul {
+.location-top-para {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.location-list ul li{
-  color: var(--heading-color);
+.location-top-para p {
+  color: var(--para-color);
+  font-size: 22px;
+  max-width: 500px;
 }
 
-.right-location-image {
-  margin-left: auto;
-  width: 45%;
+.location-list ul {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
 }
-.right-location-image img {
+.location-list ul li {
+  color: var(--heading-color);
+}
+.location-list ul li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: end;
+}
+.location-list ul li a {
+  color: var(--heading-color);
+  font-size: 28px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+.location-list ul li span {
+  display: flex;
+  background-color: var(--heading-color);
+  color: var(--text-white);
+  padding: 5px;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.location-btn a {
+  display: inline-block;
+  color: var(--text-white);
+  background-color: var(--heading-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.right-location-img {
+  width: 45%;
+  position: relative;
+}
+.right-location-img img {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  object-position: left bottom;
 }
-
-@media screen and (max-width: 768px) {
-  .hero-container {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 1024px) {
+  .location-top-content {
+    width: 100%;
     gap: 20px;
   }
-  .left-content {
-    position: relative;
-    width: 100%;
-  }
-  .container-content {
-    width: 100%;
-    gap: 40px;
-  }
-
-  .right-location-image {
-    width: 100%;
+  .location-top-para p {
+    font-size: 20px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
+  .location-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .left-location-content {
+    position: relative;
+  }
+  .right-location-img {
+    width: 100%;
+    height: 100%;
+  }
+  .location-top-para p{
+    font-size: 18px;
+  }
+  .location-list ul li a {
+    font-size: 24px;
+  }
+  .location-btn a {
+    font-size: 16px;
+  }
+}
+
+/* second-slider  */
+.container-lg{
+  max-width: 1380px;
+  padding: 0 5% 5% 5%;
+  
+  border: 5px solid #B0D8BB;
+  border-radius: 0px 0px 100px 100px;
+  border-top: 0px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.splide2-content-details {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  text-align: center;
+}
+.splide2-img{
+  width: 100%;
+  height: 100%;
+}
+.splide2-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.splide2-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+.splide2-content img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.splide2-content p {
+  color: var(--para-color);
+  font-size: 24px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.img-left {
+  position: absolute;
+  left: 240px;
+  top: -20px;
+}
+.img-right {
+  position: absolute;
+  right: 240px;
+  top: -20px;
+}
+@media screen and (max-width: 768px) {
+  .splide2-content p {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 500px) {
+    .splide2-content p {
+      font-size: 18px;
+      
+    }
+    
+  }
+  
 }
