@@ -29,3 +29,17 @@ document.addEventListener("DOMContentLoaded", () => {
     closeIcon2.style.display = "none";
   });
 });
+
+
+new Splide('.splide', {
+  type   : 'loop', 
+  perPage: 3, 
+  perMove: 1, 
+  gap    : '20px', 
+  autoplay: true, 
+  pauseOnHover: true, 
+  breakpoints: {
+      1024: { perPage: 2 }, 
+      600: { perPage:  1} 
+  }
+}).mount();
